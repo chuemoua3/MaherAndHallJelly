@@ -22,6 +22,35 @@ p{
     font-weight: 400;
 }
 
+/* NAVBAR STYLING */
+nav{
+    background-color: #161e67;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-toggler{
+    border-color: white;
+}
+.navbar-brand{
+    color:white;
+	font-size: 22px;
+	display:flex;
+	align-items:center;
+}
+
+.nav-link{
+	color: white;
+	/* font-weight: bold; */
+}
+.dropdown-menu{
+    color:white;
+    background-color: #161e67;
+}
+.navbar a{
+	color:white;
+	font-weight: 800;
+    margin-left: 20px;
+}
+
 .about {
     display: flex;
     flex-direction: column;
@@ -151,6 +180,7 @@ margin-top: 100px;
 }
 iframe{
 	display: block;
+	width: 100%;
 }
 .map{
 	margin-top: 20px;
@@ -224,28 +254,33 @@ select{
 }
 
 /*footer style */
-/* possibly change footer to not be fixed */
 footer {
+    display: flex;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 130px;
     font-family: 'Montserrat', sans-serif;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: #ff5c5c;
     color: white;
     text-align: center;
 	font-size: 14px;
-	height: 130px;
-	display: flexbox;
-	justify-content: center;
+	align-items: center;
 	/* font-weight: bold; */
   }
 footer p{
 	align-items: center;
+	margin-bottom: 0;
 
 }
 footer a{
 	color: white;
+	font-weight: 600;
+}
+
+footer a:hover{
+	color: #161e67; 
 }
 /*general form style 320*/
 
@@ -365,41 +400,27 @@ select:focus{
 	transition-duration: 1s;
 	background-color: #ff5c5c;
 }
-/* NAVBAR STYLING */
-nav{
-    background-color: #161e67;
-    font-family: 'Montserrat', sans-serif;
-}
-.navbar-toggler{
-    border-color: white;
-}
-.navbar-brand{
-    color:white;
-    font-size: 38px;
-}
-.nav-link{
-	color: white;
-	/* font-weight: bold; */
-}
-.dropdown-menu{
-    color:white;
-    background-color: #161e67;
-}
-.navbar a{
-	color:white;
-	font-weight: bold;
-    margin-left: 20px;
-}
 
-/*---------	Desktop Form Style   -----------*/
+
+/* ------media queries below------*/
+
+@media screen and (min-width: 480px) {
+	/*nav styling 768*/
+	.navbar-brand{
+		color:white;
+		font-size: 38px;
+	}
+}
 
 @media screen and (min-width: 768px) {
- 		
+	
 /*  all form style 768*/
 	.container{
 		width: 750px;
 		margin: 0 auto;
 	}
+
+
 /*	end all form style 768*/
   
   
